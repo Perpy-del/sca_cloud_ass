@@ -1,4 +1,4 @@
-# Create AWS s3 BUCKET USING THE AWS CLI
+# Create AWS s3 Bucket using the AWS CLI
 
 ## Overview
 This is a simple project on how to create an AWS s3 bucket using the AWS CLI.
