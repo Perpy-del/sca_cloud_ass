@@ -102,5 +102,55 @@ To confirm if the bucket was created successfully, you can list the buckets avai
 
 ![Listing buckets](./images/cli11.png)
 
+## Create an IAM user with the policy access to read s3 buckets only
+- Log into your AWS management console (ensure you have admin access)
+
+![login email](./images/user01.png)
+
+![login password](./images/user02.png)
+
+- Search for IAM using the search bar
+
+![Search for IAM using the search bar](./images/user03.png)
+
+- From the sidebar, search for Users and click on it, then click on Create User
+![Create User](./images/user04.png)
+
+- Give the user a name, then select the Provide user access to the AWS Management Console, select the _I want to create an IAM user_ and deselect the _User must create a new password on Sign In_, then click on the **Next** button
+![Name user](./images/user05.png)
+
+![Name user](./images/user08.png)
+
+- Set permission, the best option is to add user to a user group
+![Permission user](./images/user06.png)
+You can create a user group if one has not been created by Clicking on **Create group** or selecting **User group** on the side bar.
+![User group](./images/user07.png)
+
+- Give the user group a name and add a policy manually by clicking on **Create policy** or selecting from the list of policies outlined, then click on **Create user group**
+![Create policy](./images/user09.png)
+
+![user group created](./images/user10.png)
+
+- Review changes and click on **Create user**
+- Once the user has been created successfully, copy the user details and store somewhere.
+
+- You can create access key for the user by clicking on the user and clicking on **Create access key**
+![Access key](./images/user12.png)
+
+- Select the use case for the Access key, select the _I understand the above recommendation and want to proceed to create an access key_, then click Next
+![Access key](./images/user13.png)
+![Access key](./images/user14.png)
+
+- You can also give it a tag, but it is entirely optional
+![Access key](./images/user15.png)
+
+- Ensure to copy the access key and secret access key as soon as the key has been created successfully
+![Access key](./images/user16.png)
+
+- Now you can see the user details including the fact that the user has access keys for a specific policy.
+![User details](./images/user17.png)
+
+
+
 _**Thank you for reading**_
 
